@@ -1,11 +1,12 @@
 import {JSX} from 'react';
 import PlaceCard from '../../components/place-card/place-card';
 import Page from '../../components/page';
+import {AuthorizationStatus} from '../../const';
 
 
 function Offer(): JSX.Element {
   return (
-    <Page className="page" title="6 cities: offer" isAuthorizedUser>
+    <Page className="page" title="6 cities: offer" isAuthorizedUser={AuthorizationStatus.Auth}>
       <main className="page__main page__main--offer">
         <section className="offer">
           <div className="offer__gallery-container container">

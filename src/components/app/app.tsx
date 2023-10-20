@@ -1,6 +1,6 @@
 import {Main, Favorites, Login, Offer, NotFoundPage} from '../../pages';
 import {JSX} from 'react';
-import {AppRouter} from '../../routes';
+import {AppRouter} from '../../const';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import {HelmetProvider} from 'react-helmet-async';
 import PrivateRoute from './private-route';

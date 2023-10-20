@@ -1,6 +1,7 @@
 import {JSX} from 'react';
 import PlaceCard from '../../components/place-card/place-card';
 import Page from '../../components/page';
+import {AuthorizationStatus} from '../../const';
 
 type MainProps = {
   offerCount: number;
@@ -8,7 +9,7 @@ type MainProps = {
 
 function Main({offerCount}: MainProps): JSX.Element {
   return (
-    <Page className="page page--gray page--main" title="6 cities" isAuthorizedUser>
+    <Page className="page page--gray page--main" title="6 cities" isAuthorizedUser={AuthorizationStatus.Auth}>
       <main className="page__main page__main--index">
         <h1 className="visually-hidden">Cities</h1>
         <div className="tabs">

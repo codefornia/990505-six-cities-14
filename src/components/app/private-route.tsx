@@ -1,6 +1,6 @@
 import {Navigate} from 'react-router-dom';
 import {JSX} from 'react';
-import {AppRouter} from '../../routes';
+import {AppRouter} from '../../const';
 
 type PrivateRouteProps = {
   children: JSX.Element;

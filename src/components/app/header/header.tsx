@@ -1,7 +1,7 @@
 import {JSX} from 'react';
 import UserStatusBar from './user-status-bar';
 import {Link} from 'react-router-dom';
-import {AppRouter} from '../../../routes';
+import {AppRouter} from '../../../const';
 import Container from '../container';
 
 type HeaderProps = {

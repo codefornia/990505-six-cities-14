@@ -1,6 +1,6 @@
 import {JSX} from 'react';
 import {Link} from 'react-router-dom';
-import {AppRouter} from '../../routes';
+import {AppRouter} from '../../const';
 
 type PlaceCardProps = {
   className?: string;

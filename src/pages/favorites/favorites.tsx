@@ -1,11 +1,12 @@
 import {JSX} from 'react';
 import {Link} from 'react-router-dom';
-import {AppRouter} from '../../routes';
+import {AppRouter} from '../../const';
 import Page from '../../components/page';
+import {AuthorizationStatus} from '../../const';
 
 function Favorites(): JSX.Element {
   return (
-    <Page className="page" title="6 cities: favorites" isAuthorizedUser>
+    <Page className="page" title="6 cities: favorites" isAuthorizedUser={AuthorizationStatus.Auth}>
       <main className="page__main page__main--favorites">
         <div className="page__favorites-container container">
           <section className="favorites">

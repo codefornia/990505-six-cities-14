@@ -1,10 +1,11 @@
 import {JSX} from 'react';
 import {Link} from 'react-router-dom';
 import Page from '../../components/page';
+import {AuthorizationStatus} from '../../const';
 
 function NotFoundPage(): JSX.Element {
   return (
-    <Page className="page" title="6 cities: page not found" isAuthorizedUser={false}>
+    <Page className="page" title="6 cities: page not found" isAuthorizedUser={AuthorizationStatus.Auth}>
       <main className="page__main" style={{minHeight: '100vh'}}>
         <div className="container">
           <h1>404</h1>
